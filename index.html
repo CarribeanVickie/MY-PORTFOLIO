@@ -146,64 +146,72 @@
                 </div>
             </section>
 
- <section id="projects" class="projects-section">
-  <h2>PROJECTS</h2>
-  <h3>Featured Projects</h3>
+            <section id="projects" class="projects-section">
+            <h2>PROJECTS</h2>
+            <h3>Featured Projects</h3>
 
-  <!-- Project 1: Space Shooter Game -->
-  <div class="project-card">
-    <video controls poster="assets/thumbnails/space-shooter.jpg">
-      <source src="assets/videos/space-shooter.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="project-description">
-      <h4>Space Shooter Game</h4>
-      <p>A classic 2D space shooter built with Python and Pygame. Shoot asteroids, dodge enemies, and power up!</p>
-      <a href="https://github.com/CarribeanVickie/Space-Shooter-Game" target="_blank">View on GitHub</a>
-      <details>
-        <summary>How to Run This Game</summary>
-        <p>Clone or download the folder from GitHub and run it on your PC using Python + Pygame installed.</p>
-      </details>
-    </div>
-  </div>
+            <!-- Project 1: Space Shooter Game -->
+            <div class="project-card">
+                <video controls poster="assets/space-shooter.jpg">
+                <source src="assets/space_shooter.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+                <div class="project-description">
+                <h4>Space Shooter Game</h4>
+                <p>A classic 2D space shooter built with Python and Pygame. Shoot asteroids, dodge enemies, and power up!</p>
+                <a href="https://github.com/CarribeanVickie/Space-Shooter-Game" target="_blank">View on GitHub</a>
+                <details>
+                    <summary>How to Run This Game</summary>
+                    <p>Clone or download the folder from GitHub and run it on your PC using Python + Pygame installed.</p>
+                </details>
+                </div>
+            </div>
 
-  <!-- Project 2: Car Racing Game -->
-  <div class="project-card">
-    <video controls poster="assets/thumbnails/car-game.jpg">
-      <source src="assets/videos/car-game.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="project-description">
-      <h4>Car Racing Game</h4>
-      <p>A high-speed car dodging game with score tracking, acceleration, and sound effects — also made with Python!</p>
-      <a href="https://github.com/CarribeanVickie/CAR-GAME" target="_blank">View on GitHub</a>
-      <details>
-        <summary>How to Run This Game</summary>
-        <p>Download or clone the GitHub repo and execute the script with Python installed on your system.</p>
-      </details>
-    </div>
-  </div>
+            <!-- Project 2: Car Racing Game -->
+            <div class="project-card">
+                <video controls poster="assets/car-game.jpg">
+                <source src="assets/car-game.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+                <div class="project-description">
+                <h4>Car Racing Game</h4>
+                <p>A high-speed car dodging game with score tracking, acceleration, and sound effects — also made with Python!</p>
+                <a href="https://github.com/CarribeanVickie/CAR-GAME" target="_blank">View on GitHub</a>
+                <details>
+                    <summary>How to Run This Game</summary>
+                    <p>Download or clone the GitHub repo and execute the script with Python installed on your system.</p>
+                </details>
+                </div>
+            </div>
 
-  <!-- Project 3: Church Website -->
-  <div class="project-card">
-    <img src="assets/thumbnails/church-site.jpg" alt="Church Website Screenshot" class="project-img" />
-    <div class="project-description">
-      <h4>Church Website</h4>
-      <p>A simple website created using HTML, CSS, and JavaScript for our local church — my first full web project!</p>
-      <a href="https://carribeanvickie.github.io/RHEMA-WORD-EMBASSY-CHURCH/" target="_blank">Visit Live Website</a>
-    </div>
-  </div>
-</section>
+            <!-- Project 3: Church Website -->
+            <div class="project-card">
+                <img src="assets/church_website.jpg" alt="Church Website Screenshot" class="project-img" />
+                <div class="project-description">
+                <h4>Church Website</h4>
+                <p>A simple website created using HTML, CSS, and JavaScript for our local church — my first full web project!</p>
+                <a href="https://carribeanvickie.github.io/RHEMA-WORD-EMBASSY-CHURCH/" target="_blank">Visit Live Website</a>
+                </div>
+            </div>
+            </section>
             <section id="contact" class="contact-section">
                 <h2>CONTACT ME</h2>
                 <p>If you’d like to get in touch, feel free to reach out via email or connect with me on social media!</p>
-                <ul>
-                    <li>Email: <a href="mailto:ichuguvictor@gmail.com"></a></li>
+
+                <ul class="contact-info">
+                    <li>Email: <a href="mailto:ichuguvictor@gmail.com">ichuguvictor@gmail.com</a></li>
                     <li>GitHub: <a href="https://github.com/CarribeanVickie" target="_blank">CarribeanVickie</a></li>
                     <li>LinkedIn: <a href="https://www.linkedin.com/in/victor-ichugu-20143034b/" target="_blank">Victor Mwaura Ichugu</a></li>
                     <li>Twitter: <a href="https://x.com/Carribean_Vicky" target="_blank">@CarribeanVicky</a></li>
-                    <li>Whatsapp: <strong>+254112655565</strong></li>
+                    <li>WhatsApp: <strong>+254112655565</strong></li>
                 </ul>
+
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" name="name" required>
+                    <input type="email" placeholder="Your Email" name="email" required>
+                    <textarea placeholder="Your Message" name="message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
             </section>
         </main>
     </body>
