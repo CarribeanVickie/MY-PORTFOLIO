@@ -149,6 +149,90 @@ section h2 {
   margin-bottom: 1rem;
 }
 
+/* Education Section */
+.education-section {
+  background-color: #111;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.education-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #00ccff;
+}
+
+.education-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.education-card {
+  background-color: #1a1a1a;
+  border: 2px solid #00ccff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.education-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ccff;
+}
+
+.education-card h3 {
+  font-size: 1.3rem;
+  color: #00ccff;
+  margin-bottom: 0.8rem;
+}
+
+.download-btn {
+  background-color: transparent;
+  border: 2px solid #00ccff;
+  color: #00ccff;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  animation: heartbeat 1.5s infinite;
+  display: inline-block;
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cv-download {
+  margin-top: 2.5rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.download-btn:hover {
+  background-color: #00ccff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    box-shadow: 0 0 10px #00ccff, 0 0 20px #00ccff;
+  }
+  50% {
+    box-shadow: 0 0 20px #00ccff, 0 0 40px #00ccff;
+  }
+}
+
 /* Skill Section */
 .skills-section {
   display: flex;
@@ -461,44 +545,56 @@ section h2 {
 
 /* CONTACT INFO */
 .contact-info {
-  list-style: none;
-  padding: 0;
-  margin-top: 3rem; /* adds space below the form */
-  margin-bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .contact-info li {
-  margin: 0.4rem 0;
-  font-size: 1rem;
-  color: #ddd;
+  list-style: none;
 }
 
-.contact-info a {
-  color: #00ffff;
+.contact-button {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   text-decoration: none;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
-  color: #00aaff;
-}
-
-.form-status {
-  background-color: rgba(0, 255, 255, 0.1);
-  border: 1px solid #00ffff66;
-  color: #00ffee;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  border-radius: 10px;
+  background-color: #111827; /* Dark background for contrast */
+  color: #00ccff; /* Blue text for visibility */
+  padding: 0.8rem 1.2rem;
+  border-radius: 2rem;
   font-weight: bold;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  display: none;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 204, 255, 0.4);
+  animation: heartbeat 2s infinite;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-body:has(#form-status):has(form[action*="success=true"]) #form-status {
-  display: block;
+.contact-button:hover {
+  background-color: #00ccff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.contact-button img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(1.2);
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    box-shadow: 0 0 12px rgba(0, 204, 255, 0.4);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(0, 204, 255, 1);
+    transform: scale(1.07);
+  }
 }
 
 @media (max-width: 768px) {

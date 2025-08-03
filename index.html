@@ -9,23 +9,24 @@
 
         <!-- Navigation Bar -->
         <nav class="navbar">
-            <div class="navbar-title">VICTOR MWAURA'S PORTFOLIO</div>
+        <div class="navbar-title">VICTOR MWAURA'S PORTFOLIO</div>
 
-            <!-- Hamburger toggle -->
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <!-- Hamburger toggle -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden>
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
 
-            <!-- Links -->
-            <ul class="navbar-links">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#Education" class="nav-link">Education</a></li>
-                <li><a href="#Skills" class="nav-link">Skills</a></li>
-                <li><a href="#interests" class="nav-link">Interests</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+        <!-- Links -->
+        <ul class="navbar-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#Education" class="nav-link">Education</a></li>
+            <li><a href="#Skills" class="nav-link">Skills</a></li>
+            <li><a href="#interests" class="nav-link">Interests</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
         </nav>
+
 
 
     <body id="home">
@@ -43,19 +44,35 @@
                 I love staying organized depending on the task at hand — whether I’m drawing art, debugging code, or playing piano, I give it my all. Life’s too short not to enjoy every bit of it!
                 </p>
             </section>
-            <section id="Education" class="education-section">
-                <h2>EDUCATION BACKGROUNG</h2>
-                <h3>Education</h3>
-                <p>
-                    Bachelor of Science in Computer Science  
-                    St. Paul's University, Limuru  
-                    Currently in 4th Year (Expected Graduation: 2026)
-                </p>
-                <h3>Curriculum Vitae</h3>
-                <p>
-                    <a href="assets/CV.pdf" target="_blank">Download My CV</a>
-                </p>
+            <section id="education" class="education-section">
+                <h2>EDUCATION BACKGROUND</h2>
+
+                <div class="education-container">
+                    <div class="education-card">
+                        <h3>University</h3>
+                        <p><strong>Bachelor of Science in Computer Science</strong><br>
+                        St. Paul’s University – Kabuku Campus, Limuru<br>
+                        <em>Expected Graduation: 2026</em></p>
+                    </div>
+
+                    <div class="education-card">
+                        <h3>High School</h3>
+                        <p><strong>Christ King Kirwara High School</strong><br>
+                        2018 – 2022</p>
+                    </div>
+
+                    <div class="education-card">
+                        <h3>Primary School</h3>
+                        <p><strong>Kagema Primary School</strong><br>
+                        2007 – 2017</p>
+                    </div>
+                </div>
+
+                <div class="cv-download">
+                    <a href="assets/cv.pdf" download class="download-btn">📄 Download My CV</a>
+                </div>
             </section>
+
             <section id="Skills">
                 <h2>SKILLS / PROGRAMMING LANGUAGES</h2>
                 <div class="skills-section">
@@ -204,12 +221,8 @@
                 <h2>CONTACT ME</h2>
                 <p>If you’d like to get in touch, feel free to reach out via email or connect with me on social media!</p>
 
-                <div id="form-status" class="form-status" hidden>
-                    ✅ Your message has been sent successfully!
-                </div>
-
                 <!-- Contact Form First -->
-                <form class="contact-form" action="https://formspree.io/f/xldlwpzl?success=true" method="POST">
+                <form class="contact-form" action="https://formspree.io/f/xldlwpzl" method="POST">
                     <input type="text" placeholder="Your Name" name="name" required>
                     <input type="email" placeholder="Your Email" name="_replyto" required>
                     <textarea placeholder="Your Message" name="message" rows="5" required></textarea>
@@ -218,12 +231,44 @@
 
                 <!-- Contact Info After Form -->
                 <ul class="contact-info">
-                    <li>Email: <a href="mailto:ichuguvictor@gmail.com">ichuguvictor@gmail.com</a></li>
-                    <li>GitHub: <a href="https://github.com/CarribeanVickie" target="_blank">CarribeanVickie</a></li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/victor-ichugu-20143034b/" target="_blank">Victor Mwaura Ichugu</a></li>
-                    <li>Twitter: <a href="https://x.com/Carribean_Vicky" target="_blank">@CarribeanVicky</a></li>
-                    <li>WhatsApp: <a href="tel:+254112655565"><strong>+254112655565</strong></a></li>
+                    <li>
+                        <a href="mailto:ichuguvictor@gmail.com" class="contact-button">
+                            <img src="assets/icons/email.png" alt="Email Icon" />
+                            Email Me
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/CarribeanVickie" class="contact-button" target="_blank">
+                            <img src="assets/icons/git.png" alt="GitHub Icon" />
+                            GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/victor-ichugu-20143034b/" class="contact-button" target="_blank">
+                            <img src="assets/icons/linkedin.png" alt="LinkedIn Icon" />
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/Carribean_Vicky" class="contact-button" target="_blank">
+                            <img src="assets/icons/X.png" alt="Twitter Icon" />
+                            Twitter (X)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+254112655565" class="contact-button">
+                            <img src="assets/icons/telephone.png" alt="WhatsApp Icon" />
+                            Call Me
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/254112655565" class="contact-button">
+                            <img src="assets/icons/whatsapp.png" alt="WhatsApp Icon" />
+                            WhatsApp
+                        </a>
+                    </li>
                 </ul>
+
             </section>
 
         </main>
