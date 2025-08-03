@@ -10,17 +10,22 @@
         <!-- Navigation Bar -->
         <nav class="navbar">
             <div class="navbar-title">VICTOR MWAURA'S PORTFOLIO</div>
+
+            <!-- Hamburger toggle -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+            <!-- Links -->
             <ul class="navbar-links">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#Education" class="nav-link">Education</a></li>
-            <li><a href="#Skills" class="nav-link">Skills</a></li>
-            <li><a href="#interests" class="nav-link">Interests</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#Education" class="nav-link">Education</a></li>
+                <li><a href="#Skills" class="nav-link">Skills</a></li>
+                <li><a href="#interests" class="nav-link">Interests</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
-
 
 
     <body id="home">
@@ -111,7 +116,7 @@
 
             <section id="interests" class="interests-section">
                 <h2>MY INTERESTS</h2>
-                x<h3>Tech Passions</h3>
+                <h3>Tech Passions</h3>
                 <div class="interest-container-wrapper">
                     <div class="interest-card" style="background-image: url('assets/ai.webp');">
                         <p class="interest-label"><strong>Artificial Intelligence</strong></p>
@@ -152,7 +157,7 @@
 
             <!-- Project 1: Space Shooter Game -->
             <div class="project-card">
-                <video controls poster="assets/space-shooter.jpg">
+                <video class="pulse-media" controls controls poster="assets/space-shooter.jpg">
                 <source src="assets/space_shooter.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video>
@@ -169,7 +174,7 @@
 
             <!-- Project 2: Car Racing Game -->
             <div class="project-card">
-                <video controls poster="assets/car-game.jpg">
+                <video class="pulse-media" controls poster="assets/car-game.jpg">
                 <source src="assets/car_game.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video>
@@ -186,7 +191,7 @@
 
             <!-- Project 3: Church Website -->
             <div class="project-card">
-                <img src="assets/church_website.jpg" alt="Church Website Screenshot" class="project-img" />
+                <img class="pulse-media" src="assets/church_website.jpg" alt="Church Website Screenshot" class="project-img" />
                 <div class="project-description">
                 <h4>Church Website</h4>
                 <p>A simple website created using HTML, CSS, and JavaScript for our local church — my first full web project!</p>
@@ -194,25 +199,33 @@
                 </div>
             </div>
             </section>
+
             <section id="contact" class="contact-section">
                 <h2>CONTACT ME</h2>
                 <p>If you’d like to get in touch, feel free to reach out via email or connect with me on social media!</p>
 
+                <div id="form-status" class="form-status" hidden>
+                    ✅ Your message has been sent successfully!
+                </div>
+
+                <!-- Contact Form First -->
+                <form class="contact-form" action="https://formspree.io/f/xldlwpzl?success=true" method="POST">
+                    <input type="text" placeholder="Your Name" name="name" required>
+                    <input type="email" placeholder="Your Email" name="_replyto" required>
+                    <textarea placeholder="Your Message" name="message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+
+                <!-- Contact Info After Form -->
                 <ul class="contact-info">
                     <li>Email: <a href="mailto:ichuguvictor@gmail.com">ichuguvictor@gmail.com</a></li>
                     <li>GitHub: <a href="https://github.com/CarribeanVickie" target="_blank">CarribeanVickie</a></li>
                     <li>LinkedIn: <a href="https://www.linkedin.com/in/victor-ichugu-20143034b/" target="_blank">Victor Mwaura Ichugu</a></li>
                     <li>Twitter: <a href="https://x.com/Carribean_Vicky" target="_blank">@CarribeanVicky</a></li>
-                    <li>WhatsApp: <strong>+254112655565</strong></li>
+                    <li>WhatsApp: <a href="tel:+254112655565"><strong>+254112655565</strong></a></li>
                 </ul>
-
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" name="name" required>
-                    <input type="email" placeholder="Your Email" name="email" required>
-                    <textarea placeholder="Your Message" name="message" rows="5" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
             </section>
+
         </main>
     </body>
 </html>
